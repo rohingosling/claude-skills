@@ -1,0 +1,12 @@
+{
+  "name": "g-render-ascii-memory-map",
+  "description": "Render an ASCII box-drawing memory map (an address-space layout diagram) from a JSON description, for any architecture — Commodore VIC-20/C64, x86 real-mode/segmented, ARM/MCU flash+SRAM, or flat 32/64-bit. Separates the map's data from its rendering and offloads all box drawing, column alignment, address formatting, and size-proportional block heights to the renderer, so the caller only authors compact JSON. Dependency-free Python.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Rohin Gosling"
+  },
+  "homepage": "https://github.com/rohingosling/claude-skills",
+  "repository": "https://github.com/rohingosling/claude-skills",
+  "license": "MIT",
+  "keywords": [ "ascii", "memory-map", "address-space", "diagram", "render", "documentation", "markdown" ]
+}

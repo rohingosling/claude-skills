@@ -1,0 +1,51 @@
+{
+  "title": "C64 — VIC bank 0 ($0000-$3FFF, CIA-2 $DD00 bits 0-1 = %11)",
+  "render": {
+    "address_format": "commodore",
+    "origin": "top"
+  },
+  "blocks": [
+    {
+      "start": "$0000",
+      "end": "$03FF",
+      "label": "zero page / stack / system",
+      "comments": [ "$0001 CHAREN: bit 2 = 0 → char ROM at $D000 (copy)" ]
+    },
+    {
+      "start": "$0400",
+      "end": "$07FF",
+      "label": "screen RAM (video matrix)",
+      "comments": [ "matrix base; $D018 bits 4-7 = %0001" ]
+    },
+    {
+      "start": "$0801",
+      "end": "$0FFF",
+      "label": "installer code + BASIC stub",
+      "comments": [ "PRG load address; BasicUpstart2 SYS stub" ]
+    },
+    {
+      "start": "$1000",
+      "end": "$37FF",
+      "label": "char-ROM shadow — AVOID",
+      "comments": [ "VIC-II reads ROM here at $1000 / $1800" ]
+    },
+    {
+      "start": "$3800",
+      "end": "$3FFF",
+      "label": "Westminster charset (2 KB)",
+      "description": [ "ROM copy + overlaid glyphs" ],
+      "comments": [ "char base; $D018 bits 1-3 = %111 → $D018 = $1E" ]
+    },
+    {
+      "start": "$4000",
+      "end": "$CFFF",
+      "label": "... free RAM ..."
+    },
+    {
+      "start": "$D000",
+      "end": "$DFFF",
+      "label": "char ROM / I/O registers",
+      "comments": [ "char ROM when CHAREN = 0; else I/O incl. $D018" ]
+    }
+  ]
+}

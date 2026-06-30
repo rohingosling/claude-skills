@@ -1,0 +1,12 @@
+{
+  "name": "g-render-ascii-dependency-graph",
+  "description": "Render an ASCII dependency graph from a JSON structure — nodes connected horizontally (right) and vertically (bottom), with optional ellipsis continuation markers. Useful for embedding module/dependency diagrams in markdown documentation. Dependency-free Python.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Rohin Gosling"
+  },
+  "homepage": "https://github.com/rohingosling/claude-skills",
+  "repository": "https://github.com/rohingosling/claude-skills",
+  "license": "MIT",
+  "keywords": [ "ascii", "dependency-graph", "diagram", "render", "documentation", "markdown" ]
+}

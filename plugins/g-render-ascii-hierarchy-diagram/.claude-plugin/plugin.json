@@ -1,0 +1,12 @@
+{
+  "name": "g-render-ascii-hierarchy-diagram",
+  "description": "Generate a hierarchical ASCII tree diagram from a JSON structure — folder structures, decomposition diagrams, or any tree that benefits from an ASCII rendering. Supports aligned trailing comments and two modes: include the root as a single unified tree, or skip it and render each top-level child as an independent tree. Dependency-free Python.",
+  "version": "1.1.0",
+  "author": {
+    "name": "Rohin Gosling"
+  },
+  "homepage": "https://github.com/rohingosling/claude-skills",
+  "repository": "https://github.com/rohingosling/claude-skills",
+  "license": "MIT",
+  "keywords": [ "ascii", "tree", "hierarchy", "diagram", "render", "documentation", "markdown" ]
+}

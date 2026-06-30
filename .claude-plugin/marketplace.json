@@ -1,0 +1,31 @@
+{
+  "name": "rohingosling-skills",
+  "owner": {
+    "name": "Rohin Gosling",
+    "email": "rohingosling@gmail.com"
+  },
+  "description": "Rohin Gosling's curated collection of publicly-shared Claude Code Agent Skills, each packaged as an installable plugin — ASCII diagram renderers for Markdown documentation.",
+  "plugins": [
+    {
+      "name": "g-render-ascii-dependency-graph",
+      "source": "./plugins/g-render-ascii-dependency-graph",
+      "description": "Render an ASCII dependency graph from a JSON structure (horizontal/vertical links, ellipsis markers) for markdown documentation.",
+      "version": "1.0.0",
+      "license": "MIT"
+    },
+    {
+      "name": "g-render-ascii-hierarchy-diagram",
+      "source": "./plugins/g-render-ascii-hierarchy-diagram",
+      "description": "Generate a hierarchical ASCII tree diagram from a JSON structure (folder trees, decomposition diagrams) with aligned comments and two layout modes.",
+      "version": "1.1.0",
+      "license": "MIT"
+    },
+    {
+      "name": "g-render-ascii-memory-map",
+      "source": "./plugins/g-render-ascii-memory-map",
+      "description": "Render an ASCII box-drawing memory map (address-space layout diagram) from a JSON structure, for any architecture (Commodore, x86 segmented, ARM/MCU, flat 32/64-bit). Multiple address formats and size-proportional block heights.",
+      "version": "1.0.0",
+      "license": "MIT"
+    }
+  ]
+}
